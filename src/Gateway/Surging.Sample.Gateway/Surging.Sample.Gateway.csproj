@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Surging.Core.ApiGateWay" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.Caching" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.Consul" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.CPlatform" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.DotNetty" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.EventBusRabbitMQ" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.Zookeeper" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.Log4net" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.ProxyGenerator" Version="2.0.0-bate.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Surging.Core.System" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.Zookeeper" Version="2.0.0-bate.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="configs\appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="configs\appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="configs\cacheSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="configs\eventBusSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="configs\gatewaySettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

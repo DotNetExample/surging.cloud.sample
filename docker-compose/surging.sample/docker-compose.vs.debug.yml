@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  surging.sample.auth:
+    environment:
+      LogPath: /app/configs/log4net.config
+    volumes:
+      - ../../src/Shared/configs:/app/configs
+      - ../annotationxmldir:/app/annotationxmldir
+
+  surging.sample.user:
+    environment:
+      LogPath: /app/configs/log4net.config
+    volumes:
+      - ../../src/Shared/configs:/app/configs
+      - ../annotationxmldir:/app/annotationxmldir
+

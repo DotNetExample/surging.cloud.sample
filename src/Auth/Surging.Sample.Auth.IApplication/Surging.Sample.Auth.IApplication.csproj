@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Surging.Core.CPlatform" Version="2.0.0-bate.2" />
+    <PackageReference Include="Surging.Core.ProxyGenerator" Version="2.0.0-bate.2" />
+  </ItemGroup>
+
+</Project>
